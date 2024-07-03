@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/site-icon/site-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/site-icon/site-icon.png">
+    <title>はちのリンク</title>
+    <style>
+        html {
+            background-color: #d8c2ec;
+        }
+        a {
+            text-decoration: underline;
+            color: #000;
+        }
+        b {
+            font-size: 20px;
+        }
+        /*----HEADER----*/
+        .head {
+            position: fixed;
+            width: 200%;
+            top: 0;
+            z-index: 50;
+            height: 2.50rem;
+            margin-left: -50%;
+            background-color: #fff;
+        }
+        .head:after {
+            position: absolute;
+            left: 0;
+            bottom: 0;    
+            display: block;
+            background-image: linear-gradient(64.95deg, #c59fe9 5.59%, #ff94b7 91.59%);
+            --tw-content: "";
+            content: var(--tw-content);
+            height: 2px;
+            width: 200%;
+            margin: 0 calc( 50% - 60vw );
+        }
+        /*----HEADER-ICONS----*/
+        .h-title {
+            margin: 0 auto;
+            width: 90vw;
+            height: 100%;
+            display: flex;
+        }
+        .h-center {
+            width: 100%;
+            height: 100%;
+            white-space: nowrap;
+            text-align: center;
+        }
+        /*----LINK-PAGE----*/
+        .page {
+            z-index: 1;
+            padding-top: 50px;
+        }
+        .link {
+            background-color: #fff;
+            height: 800px;
+            width: 90vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (min-width: 767px) {
+            .link {
+                background-color: #fff;
+                height: 1000px;
+                width: 90vw;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        @media (min-width: 1024px) {
+            .link {
+                background-color: #fff;
+                height: 1200px;
+                width: 90vw;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        @media (min-width: 1440px) {
+            .link {
+                background-color: #fff;
+                height: 1400px;
+                width: 90vw;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        /*----TIKTOK-LINK----*/
+        .tik {
+            margin: 5px;
+            height: 30%;
+            text-align: center;
+            position: relative;
+        }
+        .text {
+            display: flex;
+            align-items: center;
+            height: 70%;
+        }
+        .text p {
+            display: flex;
+            text-align: left;
+            float: left;
+            position: relative;
+            font-size: 11px;
+            width: 49%;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        @media (min-width: 767px) {
+            .text p {
+                font-size: 18px;
+            }
+        }
+        /*----OTHER-LINK----*/
+        .other {
+            height: 50%;
+        }
+        .o-title {
+            text-align: center;
+        }
+        .other-1,
+        .other-2 {
+            text-align: center;
+            height: 50%;
+            white-space: nowrap;
+            margin-top: 5px;
+            display: flex;
+        }
+        .you,
+        .twi,
+        .ama,
+        .pay {
+            margin: 5px;
+            height: 100%;
+            width: 50%;
+        }
+        .you p,
+        .twi p,
+        .ama p,
+        .pay p {
+            white-space: wrap;
+            font-size: 10px;
+        }
+        @media (min-width: 767px) {
+            .you p,
+            .twi p,
+            .ama p,
+            .pay p {
+                font-size: 15px;
+            }
+        }
+        /*----SPACE----*/
+        @media (min-width: 767px) {
+            .space img {
+                display: none;
+            }
+        }
+        .space {
+            display: flex;
+            height: auto;
+            width: auto;
+            margin-top: 14%;
+            justify-content: center;
+            align-items: center;
+        }
+        .space img {
+            animation: move 4s linear infinite;
+        }
+        @keyframes move {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(720deg);
+            }
+        }
+        /*----EASTER-EGG----*/
+        @media (max-width: 4095px),(max-height: 4095px) {
+            .egg{
+                display: none;
+            }
+        }
+        .egg {
+            text-align: center;
+            font-size: 1000%;
+            padding-top: 50%;
+        }
+        </style>
+</head>
+<body>
+    <div class="base">
+        <header class="head">
+            <div class="h-title">
+                <div class="h-center" type="text">
+                    <img src="images/text/header_text.png" alt="hachino-link" height="100%">
+                </div>
+            </div>
+        </header>       
+        <div class="page">
+            <div class="link">
+                <div class="tik">
+                    <div class="t-title"><img src="images/text/tiktok_logo.png" alt="tiktok_logo" width="50%"></div>
+                    <div class="text">
+                        <p>
+                            TikTokでメインに活動してるよ！<br>
+                            動画投稿やライブ配信をよくしてるから<br>
+                            みんなフォロー待ってる！！
+                        </p>
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@hachida1627" data-unique-id="hachida1627" data-embed-type="creator" style="max-width: 780px; min-width: 288px; transform: scale(50%); position: absolute; left: 24%;" > <section> <a target="_blank" href="https://www.tiktok.com/@hachida1627?refer=creator_embed">@hachida1627</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+                </div>
+                <div class="other">
+                    <div class="o-title"><img src="images/text/o.png" alt="other link" width="50%"></div>
+                    <div class="other-1">
+                        <div class="you">
+                            <img src="images/1024px/youtube.png" alt="youtube" height="30%"><br>
+                            <a href="https://youtube.com/@hachidao671?si=9JPq9NETSI8-pNer"><b>YouTube</b><img src="images/1024px/link.png" height="10px"></a><br>
+                            <p>
+                                YouTubeでは長めの動画を<br>
+                                アップしてたりするよ<br>
+                                チャンネル登録して<br>
+                                最新動画とか見てね！！
+                            </p>
+                        </div>
+                        <div class="twi">
+                            <img src="images/1024px/twitter.png" alt="twitter" height="30%"><br>
+                            <a href="https://x.com/hac57251?s=09"><b>Twitter</b><img src="images/1024px/link.png" height="10px"></a><br>
+                            <p>
+                                Twitterでは日常のつぶやきや<br>
+                                配信の予告とかをメインでしてるよ！<br>
+                                皆のいいねとかリプライも見てるから<br>
+                                フォローしてチェックしといて
+                            </p>
+                        </div>
+                    </div>
+                    <div class="other-2">
+                        <div class="ama">
+                            <img src="images/1024px/amazon.png" alt="amazon" height="30%"><br>
+                            <a href="https://www.amazon.jp/hz/wishlist/ls/1POX1BI2TVQKQ?ref_=wl_share"><b>Amazon</b><img src="images/1024px/link.png" height="10px"></a><br>
+                            <p>
+                                個人的に買ってくれると<br>
+                                助かるもの公開してるから<br>
+                                リストから何か買ってくれると<br>
+                                すっごく助かる
+                            </p>
+                        </div>
+                        <div class="pay">
+                            <img src="images/1024px/paypay.png" alt="paypay" height="30%"><br>
+                            <a href="https://qr.paypay.ne.jp/p2p01_y4iTOuHtcgtuaWmW"><b>PayPay</b><img src="images/1024px/link.png" height="10px"></a><br>
+                            <p>
+                                PayPayでも貢いでくれると<br>
+                                少額でもとても助かるから<br>
+                                良かったらしてね！
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space">
+                    <img src="images/hachi-icons/sleepy.png" alt="sleepy" height="100px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="egg">create by mi</div>
+</body>
+</html>
