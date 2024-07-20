@@ -24,7 +24,8 @@
         .you,
         .twi,
         .ama,
-        .pay {
+        .pay,
+        .twitch {
             box-shadow: 1.5px 1.5px 2px #696969;
         }
         /*----HEADER----*/
@@ -69,7 +70,7 @@
         }
         .link {
             background-color: #fff;
-            height: 800px;
+            height: 900px;
             width: 90vw;
             margin-left: auto;
             margin-right: auto;
@@ -130,12 +131,16 @@
             text-align: center;
         }
         .other-1,
-        .other-2 {
-            text-align: center;
-            height: 50%;
+        .other-2,
+        .other-3 {
+            height: 40%;
             white-space: nowrap;
             margin-top: 5px;
             display: flex;
+        }
+        .other-1,
+        .other-2 {
+            text-align: center;
         }
         .you,
         .twi,
@@ -145,12 +150,28 @@
             height: 100%;
             width: 50%;
         }
+        .twitch {
+            display: flex;
+            margin: 5px;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+        }
+        .twitch div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         .you p,
         .twi p,
         .ama p,
         .pay p {
             white-space: wrap;
             font-size: 10px;
+        }
+        .twitch p {
+            white-space: wrap;
+            font-size: 13px;
         }
         /*----SPACE----*/
         .space {
@@ -161,7 +182,7 @@
             justify-content: center;
             align-items: center;
         }
-        .space img {
+        /*.space img {
             animation: move 4s linear infinite;
             border-radius: 100px;
         }
@@ -191,7 +212,7 @@
                 transform: rotate(720deg);
                 background-color: #ff6b6b;
             }
-        }
+        }*/
         /*----DISPLAY WIDTH:767px----*/
         @media (min-width: 767px) {
             /*-TIKTOK-*/
@@ -209,7 +230,8 @@
             .you p,
             .twi p,
             .ama p,
-            .pay p {
+            .pay p,
+            .twitch p {
                 font-size: 18px;
             }
             b {
@@ -306,14 +328,26 @@
                             </p>
                         </div>
                     </div>
+                    <div class="other-3">
+                        <div class="twitch">
+                            <img src="images/1024px/twitch.png" alt="twitch" height="50%"><br>
+                            <div>
+                                <a href="https://twitch.tv/hachi57251"><b>Twitch</b><img src="images/1024px/link.png" height="10px"></a><br>
+                                <p>
+                                    Minecraft以外の配信ではここでするよ<br>
+                                    よかったらこっちもフォローしといて
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="space">
+                <!--<div class="space">
                     <img src="images/hachi-icons/cry.png" alt="cry" height="70px" id="a">
                     <img src="images/hachi-icons/happy.png" alt="happy" height="70px" id="b">
                     <img src="images/hachi-icons/love.png" alt="love" height="70px" id="c">
                     <img src="images/hachi-icons/peace.png" alt="peace" height="70px" id="d">
                     <img src="images/hachi-icons/sleepy.png" alt="sleepy" height="70px" id="e">
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
