@@ -1,278 +1,38 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/site-icon/site-icon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/site-icon/site-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://www.tiktok.com/embed.js"></script>
+    <script async src="js/clock.js"></script>
+    <script async src="js/site.js"></script>
     <title>はちのリンク</title>
-    <style>
-        html {
-            background-color: #d8c2ec;
-        }
-        a, b, p {
-            font-family: "HiraginoSans-W0","Hiragino Sans","ヒラギノ角ゴシック";
-        }
-        a {
-            text-decoration: underline;
-            color: #000;
-        }
-        b {
-            font-size: 20px;
-        }
-        .text,
-        .you,
-        .twi,
-        .ama,
-        .pay,
-        .twitch {
-            box-shadow: 1.5px 1.5px 2px #696969;
-        }
-        /*----HEADER----*/
-        .head {
-            position: fixed;
-            width: 200%;
-            top: 0;
-            z-index: 50;
-            height: 2.50rem;
-            margin-left: -50%;
-            background-color: #fff;
-        }
-        .head:after {
-            position: absolute;
-            left: 0;
-            bottom: 0;    
-            display: block;
-            background-image: linear-gradient(64.95deg, #c59fe9 5.59%, #ff94b7 91.59%);
-            --tw-content: "";
-            content: var(--tw-content);
-            height: 2px;
-            width: 200%;
-            margin: 0 calc( 50% - 60vw );
-        }
-        /*----HEADER-ICONS----*/
-        .h-title {
-            margin: 0 auto;
-            width: 90vw;
-            height: 100%;
-            display: flex;
-        }
-        .h-center {
-            width: 100%;
-            height: 100%;
-            white-space: nowrap;
-            text-align: center;
-        }
-        /*----LINK-PAGE----*/
-        .page {
-            z-index: 1;
-            padding-top: 50px;
-        }
-        .link {
-            background-color: #fff;
-            height: 900px;
-            width: 90vw;
-            margin-left: auto;
-            margin-right: auto;
-            box-shadow: 1.5px 1.5px 2px #696969;
-        }
-        @media (min-width: 767px) {
-            .link {
-                height: 1000px;
-            }
-        }
-        @media (min-width: 1024px) {
-            .link {
-                height: 1200px;
-            }
-        }
-        @media (min-width: 1440px) {
-            .link {
-                height: 1400px;
-            }
-        }
-        /*----TIKTOK-LINK----*/
-        .tik {
-            margin: 5px;
-            height: 30%;
-            text-align: center;
-            position: relative;
-        }
-        .text {
-            display: flex;
-            align-items: center;
-            height: 67%;
-        }
-        .text p {
-            display: flex;
-            text-align: center;
-            float: left;
-            position: relative;
-            font-size: 11px;
-            width: 54%;
-            flex-wrap: wrap;
-            align-content: center;
-            justify-content: center;
-        }
-        button {
-            background-color: rgba(234, 40, 78, 1);
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            width: 61%;
-            padding: 4px;
-            font-size: 14px;
-        }
-        /*----OTHER-LINK----*/
-        .other {
-            height: 50%;
-        }
-        .o-title {
-            text-align: center;
-        }
-        .other-1,
-        .other-2,
-        .other-3 {
-            height: 40%;
-            white-space: nowrap;
-            margin-top: 5px;
-            display: flex;
-        }
-        .other-1,
-        .other-2 {
-            text-align: center;
-        }
-        .you,
-        .twi,
-        .ama,
-        .pay {
-            margin: 5px;
-            height: 100%;
-            width: 50%;
-        }
-        .twitch {
-            display: flex;
-            margin: 5px;
-            height: 100%;
-            width: 100%;
-            align-items: center;
-        }
-        .twitch div {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .you p,
-        .twi p,
-        .ama p,
-        .pay p {
-            white-space: wrap;
-            font-size: 10px;
-        }
-        .twitch p {
-            white-space: wrap;
-            font-size: 13px;
-        }
-        /*----SPACE----*/
-        .space {
-            display: flex;
-            height: auto;
-            width: auto;
-            margin-top: 22%;
-            justify-content: center;
-            align-items: center;
-        }
-        /*.space img {
-            animation: move 4s linear infinite;
-            border-radius: 100px;
-        }
-        @media (max-width: 376px) {
-            #a {
-                width: 0px;
-            }
-        }
-        @keyframes move {
-            0% {
-                transform: rotate(0deg);
-                background-color: #ff6b6b;
-            }
-            20% {
-                background-color: #fff36b;
-            }
-            40% {
-                background-color: #77ff6b;
-            }
-            60% {
-                background-color: #6b9cff;
-            }
-            80% {
-                background-color: #d06bff;
-            }
-            100% {
-                transform: rotate(720deg);
-                background-color: #ff6b6b;
-            }
-        }*/
-        /*----DISPLAY WIDTH:767px----*/
-        @media (min-width: 767px) {
-            /*-TIKTOK-*/
-            .text p ,
-            button {
-                font-size: 20px;
-            }
-            /*-OTHER-*/
-            .o-title {
-                display: flex;
-                height: 120px;
-                align-items: flex-end;
-                justify-content: center;
-            }
-            .you p,
-            .twi p,
-            .ama p,
-            .pay p,
-            .twitch p {
-                font-size: 18px;
-            }
-            b {
-                font-size: 24px;
-            }
-            /*-SPACE-*/
-            .space img {
-                display: none;
-            }
-        } 
-        /*----EASTER-EGG----*/
-        @media (max-width: 8191px),(max-height: 8191px) {
-            .egg {
-                display: none;
-            }
-        }
-        @media (min-width: 8191px),(min-height: 8191px) {
-            .base {
-                display: none;
-            }
-        }
-        .egg {
-            text-align: center;
-            font-size: 10000%;
-            padding-top: 25%;
-        }
-        </style>
 </head>
+
 <body>
     <div class="base">
         <header class="head">
             <div class="h-title">
-                <div class="h-center" type="text">
+                <div class="clock">
+                    <p class="clock-time"></p>
+                </div>
+                <div class="h-center">
                     <img src="images/text/header_text.png" alt="hachino-link" height="100%">
                 </div>
             </div>
-        </header>       
+        </header>
         <div class="page">
             <div class="link">
                 <div class="tik">
-                    <div class="t-title"><a href="https://www.tiktok.com/@hachida1627?is_from_webapp=1&sender_device=pc"><img src="images/text/tiktok_logo.png" alt="tiktok_logo" width="50%"></a></div>
+                    <div class="t-title">
+                        <a href="https://www.tiktok.com/@hachida1627?is_from_webapp=1&sender_device=pc">
+                            <img src="images/text/tiktok_logo.png" alt="tiktok_logo" width="50%">
+                        </a>
+                    </div>
                     <div class="text">
                         <p>
                             TikTokでメインに活動してるよ！<br>
@@ -280,7 +40,13 @@
                             みんなフォロー待ってる！！
                             <button onclick="tik()">TikTokを開く</button>
                         </p>
-                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@hachida1627" data-unique-id="hachida1627" data-embed-type="creator" style="max-width: 780px; min-width: 288px; transform: scale(34%); position: absolute; left: 24%;" > <section> <a target="_blank" href="https://www.tiktok.com/@hachida1627?refer=creator_embed">@hachida1627</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@hachida1627"
+                            data-unique-id="hachida1627" data-embed-type="creator"
+                            style="max-width: 780px; min-width: 288px; transform: scale(34%); position: absolute; left: 24%;">
+                            <section> <a target="_blank"
+                                    href="https://www.tiktok.com/@hachida1627?refer=creator_embed">@hachida1627</a>
+                            </section>
+                        </blockquote>
                     </div>
                 </div>
                 <div class="other">
@@ -288,7 +54,8 @@
                     <div class="other-1">
                         <div class="you">
                             <img src="images/1024px/youtube.png" alt="youtube" height="30%"><br>
-                            <a href="https://youtube.com/@hachidao671?si=9JPq9NETSI8-pNer"><b>YouTube</b><img src="images/1024px/link.png" height="10px"></a><br>
+                            <a href="https://youtube.com/@hachidao671?si=9JPq9NETSI8-pNer"><b>YouTube</b><img
+                                    src="images/1024px/link.png" height="10px"></a><br>
                             <p>
                                 YouTubeでは長めの動画を<br>
                                 アップしてたりするよ<br>
@@ -298,7 +65,8 @@
                         </div>
                         <div class="twi">
                             <img src="images/1024px/twitter.png" alt="twitter" height="30%"><br>
-                            <a href="https://x.com/hac57251?s=09"><b>Twitter</b><img src="images/1024px/link.png" height="10px"></a><br>
+                            <a href="https://x.com/hac57251?s=09"><b>Twitter</b><img src="images/1024px/link.png"
+                                    height="10px"></a><br>
                             <p>
                                 Twitterでは日常のつぶやきや<br>
                                 配信の予告とかをメインでしてるよ！<br>
@@ -310,7 +78,8 @@
                     <div class="other-2">
                         <div class="ama">
                             <img src="images/1024px/amazon.png" alt="amazon" height="30%"><br>
-                            <a href="https://www.amazon.jp/hz/wishlist/ls/1POX1BI2TVQKQ?ref_=wl_share"><b>Amazon</b><img src="images/1024px/link.png" height="10px"></a><br>
+                            <a href="https://www.amazon.jp/hz/wishlist/ls/1POX1BI2TVQKQ?ref_=wl_share"><b>Amazon</b><img
+                                    src="images/1024px/link.png" height="10px"></a><br>
                             <p>
                                 個人的に買ってくれると<br>
                                 助かるもの公開してるから<br>
@@ -320,7 +89,8 @@
                         </div>
                         <div class="pay">
                             <img src="images/1024px/paypay.png" alt="paypay" height="30%"><br>
-                            <a href="https://qr.paypay.ne.jp/p2p01_y4iTOuHtcgtuaWmW"><b>PayPay</b><img src="images/1024px/link.png" height="10px"></a><br>
+                            <a href="https://qr.paypay.ne.jp/p2p01_y4iTOuHtcgtuaWmW"><b>PayPay</b><img
+                                    src="images/1024px/link.png" height="10px"></a><br>
                             <p>
                                 PayPayでも貢いでくれると<br>
                                 少額でもとても助かるから<br>
@@ -332,7 +102,8 @@
                         <div class="twitch">
                             <img src="images/1024px/twitch.png" alt="twitch" height="50%"><br>
                             <div>
-                                <a href="https://twitch.tv/hachi57251"><b>Twitch</b><img src="images/1024px/link.png" height="10px"></a><br>
+                                <a href="https://twitch.tv/hachi57251"><b>Twitch</b><img src="images/1024px/link.png"
+                                        height="10px"></a><br>
                                 <p>
                                     Minecraft以外の配信ではここでするよ<br>
                                     よかったらこっちもフォローしといて
@@ -352,10 +123,5 @@
         </div>
     </div>
     <div class="egg"><a href="https://github.com/hachi-site">create by mi</a></div>
-    <script>
-        function tik() {
-            window.location.href='https://www.tiktok.com/@hachida1627?is_from_webapp=1&sender_device=pc';
-        }
-    </script>
 </body>
 </html>
